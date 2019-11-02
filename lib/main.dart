@@ -45,6 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     decoration: BoxDecoration(
                         color: Colors.grey[200],
                         borderRadius: BorderRadius.all(Radius.circular(25.0))),
+                    child: Image.asset('assets/sell3.jpg', fit: BoxFit.cover),
                   ),
                 ),
                 Positioned(
