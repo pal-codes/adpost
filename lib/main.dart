@@ -29,70 +29,85 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Container(
-        height: 500,
-        child: Stack(
-          overflow: Overflow.visible,
-          children: <Widget>[
-            Positioned(
-              child: Container(
-                height: 380,
-                margin: EdgeInsets.all(20.0),
-                decoration: BoxDecoration(
-                    color: Colors.grey[200],
-                    borderRadius: BorderRadius.all(Radius.circular(25.0))),
-              ),
-            ),
-            Positioned(
-              left: 30,
-              child: CircleAvatar(
-                radius: 25,
-              ),
-            ),
-            Positioned(
-              left: 100,
-              child: Text(
-                'Aayush Pal',
-                style: TextStyle(fontSize: 15),
-              ),
-            ),
-            Positioned(
-              child:
-            Stack(
+        appBar: AppBar(
+          title: Text(widget.title),
+        ),
+        body: Column(children: <Widget>[
+          Container(
+            height: 400,
+            child: Stack(
+              overflow: Overflow.visible,
               children: <Widget>[
                 Positioned(
-                  left: 50,
-                  bottom: 60,
-                  child: Text(
-                    'Ford Explorer',
-                    style: TextStyle(fontSize: 15),
+                  child: Container(
+                    height: 380,
+                    margin: EdgeInsets.all(20.0),
+                    decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.all(Radius.circular(25.0))),
                   ),
                 ),
                 Positioned(
-                  width: 80,
-                  left: 50,
-                  bottom: 10,
+                  left: 30,
+                  child: CircleAvatar(
+                    radius: 25,
+                  ),
+                ),
+                Positioned(
+                  left: 100,
+                  child: Text(
+                    'Aayush Pal',
+                    style: TextStyle(fontSize: 15),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            height: 70,
+            margin: EdgeInsets.only(left: 20.0, right: 20.0),
+            child: Stack(
+              children: <Widget>[
+                Positioned(
+                  child: Container(
+                    decoration: BoxDecoration(
+                        color: Colors.grey[200],
+                        borderRadius: BorderRadius.all(Radius.circular(25.0))),
+                  ),
+                ),
+                Positioned(
+                  top: 5,
+                  left: 20,
+                  child: Text(
+                    'Ford Explorer',
+                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w700),
+                  ),
+                ),
+                Positioned(
+                  width: 120,
+                  left: 20,
+                  bottom: 6,
                   child: Text(
                     '1 ltr, torque, horsepower, 2 years old',
                     style: TextStyle(fontSize: 12),
                   ),
                 ),
                 Positioned(
-                  bottom: 50,
-                  child: Container(
-                    decoration: BoxDecoration(
-                        color: Colors.grey[500],
-                        borderRadius: BorderRadius.all(Radius.circular(25.0))),
+                  top: 22,
+                  right: 15,
+                  child: Icon(Icons.keyboard_arrow_right, size: 20),
+                ),
+                Positioned(
+                  top: 48,
+                  right: 45,
+                  child: Text(
+                    'Price: 12200',
+                    style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
                   ),
                 ),
               ],
-            ),)
-          ],
-        ),
-      ),
-    );
+            ),
+          ),
+        ]));
   }
 }
