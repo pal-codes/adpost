@@ -9,9 +9,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.amber,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'Component Demo'),
     );
   }
 }
@@ -34,22 +34,24 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Column(children: <Widget>[
           Container(
+            margin: EdgeInsets.only(top: 40),
             height: 400,
             child: Stack(
               overflow: Overflow.visible,
               children: <Widget>[
                 Positioned(
                   child: Container(
-                    height: 380,
-                    margin: EdgeInsets.all(20.0),
+                    height: 360,
+                    margin: EdgeInsets.all(22.0),
                     decoration: BoxDecoration(
                         color: Colors.grey[200],
+                        image: DecorationImage(image: ExactAssetImage('assets/sell3.jpg'), fit: BoxFit.cover),
                         borderRadius: BorderRadius.all(Radius.circular(25.0))),
-                    child: Image.asset('assets/sell3.jpg', fit: BoxFit.cover),
+                    // child: Image.asset('assets/sell3.jpg', fit: BoxFit.cover),
                   ),
                 ),
                 Positioned(
-                  left: 30,
+                  left: 35,
                   child: CircleAvatar(
                     radius: 25,
                   ),
