@@ -114,7 +114,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           ),
           Container(
-            padding: EdgeInsets.all(20),
+            padding: EdgeInsets.all(10),
             child: Divider(
               color: Colors.black38,
               thickness: 1,
@@ -124,10 +124,80 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Stack(
               children: <Widget>[
                 Container(
-                  height: 120,
-                  margin: EdgeInsets.only(top: 200),
-                  color: Colors.grey[200],
+                  height: 130,
+                  color: Colors.grey[300],
                 ),
+                Positioned(
+                  top: 12,
+                  left: 14,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(10)),
+                        color: Colors.black54),
+                    height: 105,
+                    width: 105,
+                  ),
+                ),
+                Positioned(
+                  top: 12,
+                  left: 128,
+                  child: Container(
+                    width: 200,
+                    child: Text(
+                      'Mercedes C63s AMG',
+                      style:
+                          TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                    ),
+                  ),
+                ),
+                Positioned(
+                    top: 40,
+                    left: 128,
+                    child: Container(
+                      width: 130,
+                      child: Text(
+                        'Matte dark grey, 2016 model, well maintained with sports package',
+                        style: TextStyle(
+                            fontSize: 12, fontWeight: FontWeight.w400),
+                      ),
+                    )),
+                Positioned(
+                    top: 100,
+                    left: 128,
+                    child: Container(
+                      width: 130,
+                      child: Text(
+                        '17, September 2019',
+                        style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black38),
+                      ),
+                    )),
+                Positioned(
+                    top: 90,
+                    right: 10,
+                    child: Container(
+                      width: 100,
+                      height: 30,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          color: Colors.grey[100]),
+                      child: Text(
+                        '8299',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            fontSize: 12,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.black38),
+                      ),
+                    )),
+                Positioned(
+                    top: 50,
+                    right: 12,
+                    child: Container(
+                        child: Icon(Icons.keyboard_arrow_right, size: 30, color: Colors.grey[800],))),
               ],
             ),
           ),
