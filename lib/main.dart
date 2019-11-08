@@ -45,7 +45,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     margin: EdgeInsets.all(22.0),
                     decoration: BoxDecoration(
                         color: Colors.grey[200],
-                        image: DecorationImage(image: ExactAssetImage('assets/sell3.jpg'), fit: BoxFit.cover),
+                        image: DecorationImage(
+                            image: ExactAssetImage('assets/sell3.jpg'),
+                            fit: BoxFit.cover),
                         borderRadius: BorderRadius.all(Radius.circular(25.0))),
                     // child: Image.asset('assets/sell3.jpg', fit: BoxFit.cover),
                   ),
@@ -107,6 +109,24 @@ class _MyHomePageState extends State<MyHomePage> {
                     'Price: 12200',
                     style: TextStyle(fontSize: 13, fontWeight: FontWeight.w500),
                   ),
+                ),
+              ],
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(20),
+            child: Divider(
+              color: Colors.black38,
+              thickness: 1,
+            ),
+          ),
+          Container(
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  height: 120,
+                  margin: EdgeInsets.only(top: 200),
+                  color: Colors.grey[200],
                 ),
               ],
             ),
