@@ -32,7 +32,14 @@ class _MyHomePageState extends State<MyHomePage> {
         appBar: AppBar(
           title: Text(widget.title),
         ),
-        body: Column(children: <Widget>[
+        body: ListView(children: <Widget>[
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              'Post Widget Normal Size',
+              style: TextStyle(fontSize: 15),
+            ),
+          ),
           Container(
             margin: EdgeInsets.only(top: 40),
             height: 400,
@@ -118,6 +125,13 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Divider(
               color: Colors.black38,
               thickness: 1,
+            ),
+          ),
+          Container(
+            padding: EdgeInsets.all(10),
+            child: Text(
+              'Post Widget Medium Size',
+              style: TextStyle(fontSize: 15),
             ),
           ),
           Container(
